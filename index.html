@@ -1,6 +1,60 @@
 <!DOCTYPE html>
 <html>
-<p>
-Hello World
-</p>
+  <head>
+    <title>INDEX</title>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <h1 id="top"> Welcome to the Web Portfolio of Barrett Osmundson! </h1>
+
+    <nav>
+      <a href="about.html">About</a>&nbsp;&nbsp;|&nbsp;
+      <a href="games.html">Games</a>&nbsp;&nbsp;|&nbsp;
+      <a href="projects.html">Projects</a>
+    </nav>
+    <hr>
+    <p>
+      Hi! Welcome to my homepage. This site contains a collection of information
+      about myself and my game projects. Please explore the content that each page
+      has to offer!
+    </p>
+    <form action="/form-handler" method="post">
+      <fieldset>
+        <legend>Contact:</legend>
+        <label>Name:&nbsp;&nbsp;
+          <input type="text" id="name" name="name">
+        </label><br>
+        <label>Email:&nbsp;&nbsp;
+          <input type="text" id="email" name="email" pattern=".+@.+\..+">
+        </label><br>
+        <label>Purpose:<br>
+          <label>&nbsp;&nbsp;
+            <input type="radio" name="purpose" id="purpose_personal" value="personal">
+          </label>Personal<br>
+          <label>&nbsp;&nbsp;
+            <input type="radio" name="purpose" id="purpose_professional" value="professional">
+          </label>Professional<br>
+          <label>&nbsp;&nbsp;
+            <input type="radio" name="purpose" id="purpose_solicitation" value="solicitation">
+          </label>Solicitation<br>
+          <label>&nbsp;&nbsp;
+            <input type="radio" name="purpose" id="purpose_other" value="other">
+          </label>Other
+        </label><br>
+        <label>Note:<br>
+          <textarea rows="10" cols="50" maxlength="25" placeholder="Hello!"></textarea>
+        </label><br>
+        <button type="submit">
+          Submit
+        </button>
+        <button type="reset">
+          Reset
+        </button>
+      </fieldset>
+    </form>
+    <footer>
+      <p><small><a href="#top">Top of page</a><br>Barrett Osmundson - COMP3410 (WWW Programming) Project01</small></p>
+    </footer>
+  </body>
 </html>
