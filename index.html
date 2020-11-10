@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>INDEX</title>
+    <title>Barrett Osmundson</title>
     <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      table{
+        border-collapse: collapse;
+        border: 2px solid #999999;
+      }
+      th {
+        border: 1px solid #aaaaaa;
+        text-align: center;
+        padding: 8px;
+      }
+      td {
+        border: 1px solid #cccccc;
+        text-align: left;
+        padding: 8px;
+      }
+    </style>
   </head>
 
   <body>
@@ -19,6 +36,90 @@
       about myself and my game projects. Please explore the content that each page
       has to offer!
     </p>
+    <hr>
+    <h3 id="tictactitle"> Play some Tic-Tac-Toe? </h3>
+    <p><small id="num">No diagnols - this was a major bodge</small></p>
+    <table id="tictactoe">
+      <tr>
+        <td><button class="ttt" id="TL" onclick="marked(this.id, 'Top Left');">&nbsp;</button></td>
+        <td><button class="ttt" id="TM" onclick="marked(this.id, 'Top Middle');">&nbsp;</button></td>
+        <td><button class="ttt" id="TR" onclick="marked(this.id, 'Top Right');">&nbsp;</button></td>
+      </tr>
+      <tr>
+        <td><button class="ttt" id="CL" onclick="marked(this.id, 'Center Left');">&nbsp;</button></td>
+        <td><button class="ttt" id="CM" onclick="marked(this.id, 'Center Middle');">&nbsp;</button></td>
+        <td><button class="ttt" id="CR" onclick="marked(this.id, 'Center Right');">&nbsp;</button></td>
+      </tr>
+      <tr>
+        <td><button class="ttt" id="BL" onclick="marked(this.id, 'Bottom Left');">&nbsp;</button></td>
+        <td><button class="ttt" id="BM" onclick="marked(this.id, 'Bottom Middle');">&nbsp;</button></td>
+        <td><button class="ttt" id="BR" onclick="marked(this.id, 'Bottom Right');">&nbsp;</button></td>
+      </tr>
+    </table>
+    <br>
+    <button onclick="resetGame();">Reset Game</button>
+
+    <script>
+      function marked(square, classes){
+        //Player move
+        var buttons = $(".ttt");
+        if(buttons.length % 2 == 1){
+          $("#"+square).replaceWith(`<b class="x `+classes+`">&nbsp;X&nbsp;</b>`);
+        }
+        else{
+          $("#"+square).replaceWith(`<b class="o `+classes+`">&nbsp;O&nbsp;</b>`);
+        }
+
+        //Check for winner
+        if($(".x.Top").length === 3 || $(".x.Middle").length === 3 || $(".x.Bottom").length === 3 ||
+          $(".x.Left").length === 3 || $(".x.Center").length === 3 || $(".x.Right").length === 3){
+          $("#tictactitle").replaceWith(`<h3 id="tictactitle"> You win! </h3>`);
+          $(".ttt").replaceWith("<b>&nbsp;&nbsp;&nbsp;");
+        }
+        else if($(".o.Top").length === 3 || $(".o.Middle").length === 3 || $(".o.Bottom").length === 3 ||
+          $(".o.Left").length === 3 || $(".o.Center").length === 3 || $(".o.Right").length === 3){
+          $("#tictactitle").replaceWith(`<h3 id="tictactitle"> AI wins! </h3>`);
+          $(".ttt").replaceWith("<b>&nbsp;&nbsp;&nbsp;");
+        }
+        else if(buttons.length < 2){
+          $("#tictactitle").replaceWith(`<h3 id="tictactitle"> Cat's Game - No winner </h3>`);
+          $(".ttt").replaceWith("<b>&nbsp;&nbsp;&nbsp;");
+        }
+
+        buttons = $(".ttt");
+        setTimeout(function () {
+          //AI move
+          if(buttons.length % 2 == 0){
+            $(buttons[Math.floor(Math.random()*buttons.length)]).click();
+          }
+        }, 250);
+      }
+
+      function resetGame(){
+          $("#tictactitle").replaceWith(`<h3 id="tictactitle"> Play some Tic-Tac-Toe? </h3>`);
+          $("#tictactoe").replaceWith(`
+            <table id="tictactoe">
+              <tr>
+                <td><button class="ttt" id="TL" onclick="marked(this.id, 'Top Left');">&nbsp;</button></td>
+                <td><button class="ttt" id="TM" onclick="marked(this.id, 'Top Middle');">&nbsp;</button></td>
+                <td><button class="ttt" id="TR" onclick="marked(this.id, 'Top Right');">&nbsp;</button></td>
+              </tr>
+              <tr>
+                <td><button class="ttt" id="CL" onclick="marked(this.id, 'Center Left');">&nbsp;</button></td>
+                <td><button class="ttt" id="CM" onclick="marked(this.id, 'Center Middle');">&nbsp;</button></td>
+                <td><button class="ttt" id="CR" onclick="marked(this.id, 'Center Right');">&nbsp;</button></td>
+              </tr>
+              <tr>
+                <td><button class="ttt" id="BL" onclick="marked(this.id, 'Bottom Left');">&nbsp;</button></td>
+                <td><button class="ttt" id="BM" onclick="marked(this.id, 'Bottom Middle');">&nbsp;</button></td>
+                <td><button class="ttt" id="BR" onclick="marked(this.id, 'Bottom Right');">&nbsp;</button></td>
+              </tr>
+            </table>
+            `);
+      }
+    </script>
+
+    <hr>
     <form action="/form-handler" method="post">
       <fieldset>
         <legend>Contact:</legend>
@@ -54,7 +155,7 @@
       </fieldset>
     </form>
     <footer>
-      <p><small><a href="#top">Top of page</a><br>Barrett Osmundson - COMP3410 (WWW Programming) Project01</small></p>
+      <p><small><a href="#top">Top of page</a><br>Barrett Osmundson - COMP3410 (WWW Programming) Project02</small></p>
     </footer>
   </body>
 </html>

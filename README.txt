@@ -1,8 +1,9 @@
-This site was made for Project01 in Dr. Dan Pittman's World Wide Web Programming I [COMP3410] class.
-Its purpose is to provide a digital portfolio of some of my game projects.
-I included some regex pattern identification for an email on index.html and I included <video> tags on projects.html if that counts for any extra-credit (no pressure).
+This site was made for Project02 in Dr. Dan Pittman's World Wide Web Programming I [COMP3410] class.
+Its purpose is to expand on Project01, which aimed to provide a digital portfolio of some of my game projects.
+This update has added a jQuery-powered version of Tic-Tac-Toe that I whipped up, and a dynamic projects page.
 
-Here's a full-breakdown of where each project requirement is demonstrated:
+--
+Here's a full-breakdown of where each project01 requirement is demonstrated:
 
 +--------------------------------------------------+------------+------------+------------+---------------+
 | Requirement                                      | index.html | about.html | games.html | projects.html |
