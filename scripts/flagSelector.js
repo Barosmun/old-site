@@ -3,22 +3,23 @@ $(document).ready(randomFlag());
 function randomFlag(){
   var name;
   var link;
-  var num = Math.floor((Math.random() * 194) + 0);
-  console.log("data: ");
+  var num = Math.floor((Math.random() * 196) + 0);
+  console.log("Data: ");
   // false FOR LOCAL TESTS | true FOR LIVE BUILD
-  if(true){
+  if(1){
     $.getJSON("scripts/country_flags.json", function(data) {
+      console.log(data.length);
       name = data[num].Country;
       link = data[num].ImageURL;
       console.log(name);
       console.log(link);
       $("#flagName").html(name);
       $("#flagImage").attr("src", link);
-      console.log(data);
     });
   }
   else{
     $.getJSON("https://barrettosmundson.com/scripts/country_flags.json", function(data) {
+      console.log(data.length);
       name = data[num].Country;
       link = data[num].ImageURL;
       console.log(name);

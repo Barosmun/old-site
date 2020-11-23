@@ -170,12 +170,12 @@
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg"
   },
   {
-    "Country": "Chilé",
+    "Country": "Chile",
     "Images File Name": "Flag_of_Chile.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg"
   },
   {
-    "Country": "China (PRC)",
+    "Country": "China",
     "Images File Name": "Flag_of_the_People%27s_Republic_of_China.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
   },
@@ -1000,6 +1000,11 @@
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_the_Cook_Islands.svg"
   },
   {
+    "Country": "Kurdistan",
+    "Images File Name": "Flag_of_Kurdistan.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Flag_of_Kurdistan.svg/125px-Flag_of_Kurdistan.svg.png"
+  },
+  {
     "Country": "Niue",
     "Images File Name": "Flag_of_Niue.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Niue.svg"
@@ -1013,6 +1018,11 @@
     "Country": "Sahrawi Arab Democratic Republic",
     "Images File Name": "Flag_of_the_Sahrawi_Arab_Democratic_Republic.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_the_Sahrawi_Arab_Democratic_Republic.svg"
+  },
+  {
+    "Country": "Principality of Sealand",
+    "Images File Name": "Flag_of_Sealand.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Flag_of_Sealand.svg/125px-Flag_of_Sealand.svg.png"
   },
   {
     "Country": "Somaliland",
