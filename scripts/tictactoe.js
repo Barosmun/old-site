@@ -10,7 +10,11 @@ function marked(square, classes){
 
   //Check for winner
   if($(".x.Top").length === 3 || $(".x.Middle").length === 3 || $(".x.Bottom").length === 3 ||
-    $(".x.Left").length === 3 || $(".x.Center").length === 3 || $(".x.Right").length === 3){
+    $(".x.Left").length === 3 || $(".x.Center").length === 3 || $(".x.Right").length === 3 ||
+    (
+      ($(".x.Middle.Center").length === 1 && ( ($(".x.Top.Left").length === 1 && $(".x.Bottom.Right").length === 1)
+      || ($(".x.Top.Right").length === 1 && $(".x.Bottom.Left").length === 1)) )
+    )) {
     $("#tictactitle").replaceWith(`<h3 id="tictactitle"> You win! </h3>`);
     $(".ttt").replaceWith("<b>&nbsp;&nbsp;&nbsp;");
     updateScore(1,0);
