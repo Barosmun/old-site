@@ -196,8 +196,38 @@ td {
 #flag img{
   width: 50%;
 }
+
+#flagPrompt{
+  display: inline;
+}
+
 #flagName{
-  color:
+  display: inline;
+  color: #34404c;
+  background-color: #34404c;
+  width: 100%;
+}
+
+#flagName:hover{
+  color: #34404c;
+  background-color: transparent;
+}
+
+#flagName + button{
+  position: absolute;
+  left: 50%;
+  background-color: #8392a2;
+  border: none;
+  color: white;
+  padding: 0.2em;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  outline: none;
+}
+
+#flagName + button:hover{
+  background-color: #677789;
+  transform: scale(1.1);
 }
 
 /* FOOTER-------------------------------------------------------------------- */
