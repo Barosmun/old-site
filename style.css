@@ -41,7 +41,7 @@ td {
   width: 100%;
   min-height: 100%;
   grid-gap: 0% 0%;
-  grid-template-rows: [header] 5em [main] auto [footer] 4em;
+  grid-template-rows: [header] 8% [main] auto [footer] 5%;
   grid-template-columns: [navbar] 15% [content] 55% [margin] 30%;
   grid-template-areas:
     "header   header  social"
@@ -65,13 +65,15 @@ td {
 #container #page_title {
   grid-area: header;
   background-color: #9ca8b4; /*#d0d0d0*/
-  font-size: 2.5vw;
+  font-size: 3.6vmin;
+  text-align: justify;
   font-family: helvetica;
 }
 
 #container #page_title > h1 {
   color: #34404c; /*#404a53*/
-  margin-top: 1vh;
+  /* position: absolute; */
+  border: 2px solid black;
 }
 /* SOCIAL---------------------------------------------------------------------*/
 #social {
@@ -80,14 +82,24 @@ td {
   align-items: center;
   justify-content: space-around;
   background-color: #8392a2; /*#c1c1c1*/
+  position: sticky;
+  /* border: 2px solid black; */
 }
 #social > div{
-  width: 15%;
-  height: 70%;
+  min-width: 15%;
+  max-width: 20%;
+  max-height: 100%;
+  flex: 0 1 0%;
+  /* border: 2px solid black; */
+  /* margin-top: 3vmin; */
   /* background-color: black;
   border: 2px solid white; */
 }
 #social > div > a > img{
+  height: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
   width: 100%;
   transition: transform 0.4s ease;
 }
