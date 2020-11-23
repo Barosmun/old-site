@@ -155,7 +155,7 @@
     "ImageURL": "https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg"
   },
   {
-    "Country": "Cape Verde",
+    "Country": "Cabo Verde",
     "Images File Name": "Flag_of_Cape_Verde.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/3/38/Flag_of_Cape_Verde.svg"
   },
@@ -170,12 +170,12 @@
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Chad.svg"
   },
   {
-    "Country": "Chile",
+    "Country": "Chilé",
     "Images File Name": "Flag_of_Chile.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/7/78/Flag_of_Chile.svg"
   },
   {
-    "Country": "China",
+    "Country": "China (PRC)",
     "Images File Name": "Flag_of_the_People%27s_Republic_of_China.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
   },
@@ -245,7 +245,7 @@
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_the_Dominican_Republic.svg"
   },
   {
-    "Country": "East Timor",
+    "Country": "Timor-Leste",
     "Images File Name": "Flag_of_East_Timor.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_East_Timor.svg"
   },
@@ -410,7 +410,7 @@
     "ImageURL": "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
   },
   {
-    "Country": "Ivory Coast",
+    "Country": "Côte d'Ivoire",
     "Images File Name": "Flag_of_C%C3%B4te_d%27Ivoire.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg"
   },
@@ -835,9 +835,9 @@
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/6/60/Flag_of_Suriname.svg"
   },
   {
-    "Country": "Swaziland",
-    "Images File Name": "Flag_of_Swaziland.svg",
-    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Swaziland.svg"
+    "Country": "Eswatini",
+    "Images File Name": "Flag_of_Eswatini.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Flag_of_Eswatini.svg"
   },
   {
     "Country": "Sweden",
@@ -955,7 +955,7 @@
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Venezuela.svg"
   },
   {
-    "Country": "Vietnam",
+    "Country": "Viet Nam",
     "Images File Name": "Flag_of_Vietnam.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"
   },
@@ -978,6 +978,11 @@
     "Country": "Kosovo",
     "Images File Name": "Flag_of_Kosovo.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_Kosovo.svg"
+  },
+  {
+    "Country": "Taiwan (ROC)",
+    "Images File Name": "Flag_of_the_Republic_of_China.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/125px-Flag_of_the_Republic_of_China.svg.png"
   },
   {
     "Country": "Abkhazia",
@@ -1018,11 +1023,6 @@
     "Country": "South Ossetia",
     "Images File Name": "Flag_of_South_Ossetia.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_South_Ossetia.svg"
-  },
-  {
-    "Country": "Republic of China",
-    "Images File Name": "Flag_of_the_Republic_of_China.svg",
-    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg"
   },
   {
     "Country": "Transnistria",

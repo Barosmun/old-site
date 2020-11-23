@@ -14,6 +14,7 @@ function randomFlag(){
       console.log(link);
       $("#flagName").html(name);
       $("#flagImage").attr("src", link);
+      console.log(data);
     });
   }
   else{
