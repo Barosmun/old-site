@@ -62,19 +62,24 @@ td {
   margin-top: 6vh;
 } */
 
-#container #page_title {
+#page_title {
   grid-area: header;
   background-color: #9ca8b4; /*#d0d0d0*/
-  font-size: 3.6vmin;
-  text-align: justify;
   font-family: helvetica;
+  /* border: 2px solid red; */
+  font-size: 3.6vmin;
+  line-height: 10vmin;
 }
 
-#container #page_title > h1 {
+#page_title > h1 {
+  height: 100%;
+  box-sizing: border-box;
   color: #34404c; /*#404a53*/
   /* position: absolute; */
   /* border: 2px solid black; */
+  margin: 0px;
 }
+
 /* SOCIAL---------------------------------------------------------------------*/
 #social {
   grid-area: social;
