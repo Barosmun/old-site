@@ -982,12 +982,12 @@
   {
     "Country": "Taiwan (ROC)",
     "Images File Name": "Flag_of_the_Republic_of_China.svg",
-    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/125px-Flag_of_the_Republic_of_China.svg.png"
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/7/72/Flag_of_the_Republic_of_China.svg"
   },
   {
     "Country": "Abkhazia",
-    "Images File Name": "Flag_of_Abkhazia.svg",
-    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/2/27/Flag_of_Abkhazia.svg"
+    "Images File Name": "Flag_of_the_Republic_of_Abkhazia.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_the_Republic_of_Abkhazia.svg"
   },
   {
     "Country": "Artsakh",
@@ -1002,7 +1002,7 @@
   {
     "Country": "Kurdistan",
     "Images File Name": "Flag_of_Kurdistan.svg",
-    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Flag_of_Kurdistan.svg/125px-Flag_of_Kurdistan.svg.png"
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_Kurdistan.svg"
   },
   {
     "Country": "Niue",
@@ -1022,7 +1022,7 @@
   {
     "Country": "Principality of Sealand",
     "Images File Name": "Flag_of_Sealand.svg",
-    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Flag_of_Sealand.svg/125px-Flag_of_Sealand.svg.png"
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Flag_of_Sealand.svg"
   },
   {
     "Country": "Somaliland",
