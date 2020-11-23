@@ -1,0 +1,287 @@
+html{
+  height:100%;
+}
+
+body {
+  height: 100%;
+  weight: 100%;
+  background-color: whitesmoke;
+  margin: 0px;
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid #999999;
+}
+th {
+  border: 1px solid #aaaaaa;
+  text-align: center;
+  padding: 8px;
+}
+td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  padding: 8px;
+}
+
+/* #home_container {
+  display: grid;
+  width: 100%;
+  min-height: 100%;
+  grid-gap: 0% 0%;
+  grid-template-rows: [header] 10em [main] auto [footer] 4em;
+  grid-template-columns: [navbar] 15% [content] 55% [margin] 30%;
+  grid-template-areas:
+    "header   header  social"
+    "navbar   main    main"
+    "footer   footer  footer";
+} */
+
+#container {
+  display: grid;
+  width: 100%;
+  min-height: 100%;
+  grid-gap: 0% 0%;
+  grid-template-rows: [header] 5em [main] auto [footer] 4em;
+  grid-template-columns: [navbar] 15% [content] 55% [margin] 30%;
+  grid-template-areas:
+    "header   header  social"
+    "navbar   main    main"
+    "footer   footer  footer";
+}
+
+/* HEADER---------------------------------------------------------------------*/
+/* #home_container #page_title {
+  grid-area: header;
+  background-color: #9ca8b4;
+  font-size: 3.5vw;
+  font-family: helvetica;
+}
+
+#home_container #page_title > h1 {
+  color: #34404c;
+  margin-top: 6vh;
+} */
+
+#container #page_title {
+  grid-area: header;
+  background-color: #9ca8b4; /*#d0d0d0*/
+  font-size: 2.5vw;
+  font-family: helvetica;
+}
+
+#container #page_title > h1 {
+  color: #34404c; /*#404a53*/
+  margin-top: 1vh;
+}
+/* SOCIAL---------------------------------------------------------------------*/
+#social {
+  grid-area: social;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #8392a2; /*#c1c1c1*/
+}
+#social > div{
+  width: 15%;
+  height: 70%;
+  /* background-color: black;
+  border: 2px solid white; */
+}
+#social > div > a > img{
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+#social > div > a > img:hover{
+  transform: scale(1.2) translateX(-5%);
+}
+
+/* NAVBAR---------------------------------------------------------------------*/
+#navbar {
+  grid-area: navbar;
+  background-color: #79a6a4;
+}
+#navbar > nav {
+  padding-top: 5%;
+  padding-bottom: 20%;
+  height: 60%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: fixed;
+}
+#navbar > nav > a {
+  width: 85%;
+  align-self: center;
+  display: block;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: whitesmoke;
+  border-radius: 0.8em;
+  text-align: center;
+  color: black;
+  box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.5);
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+#navbar > nav > a:hover {
+  transform: scale(1.1) translateY(-2%) translateX(2%);
+  background-color: #dcdcdc;
+  box-shadow: -1px 2px 3px 1px rgba(0,0,0,0.5);
+}
+
+/* MAIN-----------------------------------------------------------------------*/
+#main {
+  grid-area: main;
+  background-color: whitesmoke;
+  padding-left: 2%;
+}
+
+#main hr {
+  border: 2px solid #8392a2;
+  clear: left;
+}
+
+#main h1 {
+  color: #8392a2;
+}
+
+#welcome {
+  font-size: 1.2em;
+}
+
+#tictactable {
+  transform: scale(2) translateX(25%) translateY(25%);
+  float: left;
+  margin-right: 10em;
+  margin-bottom: 10em;
+}
+
+#scoreboard {
+  table-layout: fixed;
+  width: 8rem;
+}
+
+#scoreboard th, #scoreboard td {
+  text-align: center;
+}
+#scoreboard b {
+  font-size: 2em;
+}
+
+#tictactoe > button {
+  background-color: #8392a2;
+  border: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-top: 0.2em;
+  margin-left: 0.1em;
+  font-size: 1.2em;
+  outline: none;
+}
+#tictactoe > button:hover {
+  background-color: #677789;
+  transform: scale(1.1);
+}
+
+#tictactable button {
+  transition: transform 0.3s ease;
+}
+#tictactable button:hover {
+  transform: scale(1.1);
+}
+
+#flag img{
+  width: 50%;
+}
+#flagName{
+  color:
+}
+
+/* FOOTER-------------------------------------------------------------------- */
+#footer {
+  grid-area: footer;
+  z-index: 3;
+  background-color: #808bb0;
+  padding-left: 2em;
+}
+
+/* GAMES PAGE---------------------------------------------------------------- */
+#games_list table{
+  border-collapse: collapse;
+  border: none;
+}
+
+#games_list th {
+  border: none;
+  text-align: center;
+  padding: 8px;
+}
+
+#games_list td {
+  border: none;
+  text-align: left;
+  padding: 8px;
+}
+
+#games_list img {
+  width: 20vw;
+  height: auto;
+  float: left;
+  object-fit:  contain;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+#games_list > button {
+  background-color: #8392a2;
+  border: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-top: 0.2em;
+  margin-left: 0.1em;
+  font-size: 1.2em;
+  outline: none;
+}
+#games_list > button:hover {
+  background-color: #677789;
+  transform: scale(1.1);
+}
+
+/* PROJECTS PAGE------------------------------------------------------------- */
+#projectButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#projectButtons > button {
+  background-color: #8392a2;
+  border: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-top: 0.2em;
+  margin-left: 0.1em;
+  font-size: 1.2em;
+  outline: none;
+}
+#projectButtons > button:hover {
+  background-color: #677789;
+  transform: scale(1.1);
+}
+
+/* RESUME PAGE--------------------------------------------------------------- */
+#resumeContainer {
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#resumeContainer img{
+  width: 100%;
+  overflow: scroll;
+}
