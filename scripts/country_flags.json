@@ -990,9 +990,19 @@
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_the_Republic_of_Abkhazia.svg"
   },
   {
+    "Country": "Aruba",
+    "Images File Name": "Flag_of_Aruba.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg"
+  },
+  {
     "Country": "Artsakh",
     "Images File Name": "Flag_of_Artsakh.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Flag_of_Artsakh.svg"
+  },
+  {
+    "Country": "Catalan",
+    "Images File Name": "Estelada_blava.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/8/87/Estelada_blava.svg"
   },
   {
     "Country": "Cook Islands",
@@ -1000,9 +1010,49 @@
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_the_Cook_Islands.svg"
   },
   {
+    "Country": "Curaçao",
+    "Images File Name": "Flag_of_Cura%C3%A7ao.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Flag_of_Cura%C3%A7ao.svg"
+  },
+  {
+    "Country": "England",
+    "Images File Name": "Flag_of_England.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg"
+  },
+  {
+    "Country": "Greenland",
+    "Images File Name": "Flag_of_Greenland.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Greenland.svg"
+  },
+  {
+    "Country": "Guernsey",
+    "Images File Name": "Flag_of_Guernsey.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_Guernsey.svg"
+  },
+  {
+    "Country": "Hong Kong",
+    "Images File Name": "Flag_of_Hong_Kong.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Flag_of_Hong_Kong.svg"
+  },
+  {
+    "Country": "Isle of Man",
+    "Images File Name": "Flag_of_the_Isle_of_Mann.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Flag_of_the_Isle_of_Mann.svg"
+  },
+  {
+    "Country": "Jersey",
+    "Images File Name": "Flag_of_Jersey.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Flag_of_Jersey.svg"
+  },
+  {
     "Country": "Kurdistan",
     "Images File Name": "Flag_of_Kurdistan.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_Kurdistan.svg"
+  },
+  {
+    "Country": "Macau",
+    "Images File Name": "Flag_of_Macau.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Macau.svg"
   },
   {
     "Country": "Niue",
@@ -1015,14 +1065,29 @@
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_the_Turkish_Republic_of_Northern_Cyprus.svg"
   },
   {
+    "Country": "Puerto Rico",
+    "Images File Name": "Flag_of_Puerto_Rico.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Puerto_Rico.svg"
+  },
+  {
     "Country": "Sahrawi Arab Democratic Republic",
     "Images File Name": "Flag_of_the_Sahrawi_Arab_Democratic_Republic.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/2/26/Flag_of_the_Sahrawi_Arab_Democratic_Republic.svg"
   },
   {
+    "Country": "Scotland",
+    "Images File Name": "Flag_of_Scotland.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/1/10/Flag_of_Scotland.svg"
+  },
+  {
     "Country": "Principality of Sealand",
     "Images File Name": "Flag_of_Sealand.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Flag_of_Sealand.svg"
+  },
+  {
+    "Country": "Sint Maarten",
+    "Images File Name": "Flag_of_Sint_Maarten.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_Sint_Maarten.svg"
   },
   {
     "Country": "Somaliland",
@@ -1035,8 +1100,18 @@
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_South_Ossetia.svg"
   },
   {
+    "Country": "Tokelau",
+    "Images File Name": "Flag_of_Tokelau.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Tokelau.svg"
+  },
+  {
     "Country": "Transnistria",
     "Images File Name": "Flag_of_Transnistria_%28state%29.svg",
     "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Transnistria_%28state%29.svg"
+  },
+  {
+    "Country": "Wales",
+    "Images File Name": "Flag_of_Wales_%281959%E2%80%93present%29.svg",
+    "ImageURL": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Wales_%281959%E2%80%93present%29.svg"
   }
 ]
