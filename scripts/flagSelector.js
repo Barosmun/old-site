@@ -6,7 +6,7 @@ function randomFlag(){
   var num = Math.floor((Math.random() * 196) + 0);
   console.log("Data: ");
   // false FOR LOCAL TESTS | true FOR LIVE BUILD
-  if(true){
+  if(false){
     $.getJSON("scripts/country_flags.json", function(data) {
       // console.log(data.length);
       name = data[num].Country;

@@ -67,17 +67,47 @@ td {
   background-color: #9ca8b4; /*#d0d0d0*/
   font-family: helvetica;
   /* border: 2px solid red; */
-  font-size: 3.6vmin;
+
   line-height: 10vmin;
 }
 
 #page_title > h1 {
-  height: 100%;
-  box-sizing: border-box;
   color: #34404c; /*#404a53*/
+  font-size: 5vw;
   /* position: absolute; */
   /* border: 2px solid black; */
   margin: 0px;
+}
+
+@media screen and (min-width: 0em){
+  #page_title > h1 {
+    font-size: 7vw;
+  }
+
+}
+@media screen and (min-width: 40em){
+  #page_title > h1 {
+    font-size: 6vw;
+  }
+
+}
+@media screen and (min-width: 60em){
+  #page_title > h1 {
+    font-size: 5vw;
+  }
+
+}
+@media screen and (min-width: 80em){
+  #page_title > h1 {
+    font-size: 4vw;
+  }
+
+}
+@media screen and (min-width: 100em){
+  #page_title > h1 {
+    font-size: 3vw;
+  }
+
 }
 
 /* SOCIAL---------------------------------------------------------------------*/
@@ -212,7 +242,7 @@ td {
 }
 
 #flag img{
-  width: 100%;
+  width: 50%;
 }
 
 #flagPrompt{
@@ -226,14 +256,14 @@ td {
   width: 100%;
 }
 
-#flagName:hover, #flagName:focus, #flagName:active{
+#flagName:hover, #flagName:focus{
   color: #34404c;
   background-color: transparent;
 }
 
-#flag button{
-  /*position: absolute;*/
-  /* left: 50%; */
+#flagName + button{
+  position: absolute;
+  left: 50%;
   background-color: #8392a2;
   border: none;
   color: white;
@@ -243,7 +273,7 @@ td {
   outline: none;
 }
 
-#flag button:hover{
+#flagName + button:hover{
   background-color: #677789;
   transform: scale(1.1);
 }
@@ -254,10 +284,6 @@ td {
   z-index: 3;
   background-color: #808bb0;
   padding-left: 2em;
-}
-
-#footer a{
-  color: whitesmoke;
 }
 
 /* GAMES PAGE---------------------------------------------------------------- */
