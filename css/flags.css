@@ -1,0 +1,62 @@
+h3{
+	text-align: center;
+	font-size: 175%;
+}
+
+#flags {
+	text-align: center;
+	width: 100%;
+	display: grid;
+	grid-template-columns: [margin-l] 10% [board] 40% [margin-m] 5% [score] 40% [margin-r] 10%;
+}
+
+#flag-image {
+	width: 100%;
+}
+
+#flag-name {
+	line-height: 400%;
+	color: transparent;
+	background-color: var(--navBack);
+	background-clip: content-box;
+}
+
+#flag-name:hover, #flag-name:focus, #flag-name:active {
+	color: var(--defaultText);
+}
+
+#flags button{
+	font-size: 120%;
+	border: none;
+	background-color: var(--buttonBack);
+	color: var(--buttonText);
+	padding: 4%;
+	margin: 4%;
+}
+
+#flags button:hover{
+	background-color: var(--navBack);
+	border: none;
+}
+
+
+@media screen and (max-width: 9999px){
+	#flags {
+		grid-template-columns: [margin-l] 10% [board] 40% [margin-m] 5% [score] 40% [margin-r] 10%;
+		grid-template-rows: [row] 100%;
+	}
+
+	#flags button{
+		margin-bottom: 4%;
+	}
+}
+@media screen and (max-width: 680px){
+	#flags {
+		grid-template-columns: [column] 100%;
+		grid-template-rows: [margin-l] 0% [board] 50% [margin-m] 0% [score] 50% [margin-r] 0%;
+	}
+
+	#flags button{
+		margin-bottom: 15%;
+	}
+}

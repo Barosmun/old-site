@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Barrett Osmundson</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../scripts/tictactoe.js"></script>
+    <link rel="stylesheet" href="../css/style-center.css">
+    <link rel="stylesheet" href="../css/tictactoe.css">
+  </head>
+
+  <body id="page-top">
+    <!--/   Nav Bar   /-->
+    <div id="header">
+      <div id="header-left">
+        <h1>Barrett Osmundson</h1>
+      </div>
+      
+      <div id="header-right">
+        <ul id="socials">
+          <a href="mailto:barrettosmundson@gmail.com" target="_blank"><li class="social-icon email-icon" title="email"></li></a>
+          <a href="https://www.linkedin.com/in/barrett-osmundson/" target="_blank"><li class="social-icon linkedin-icon" title="linkedin"></li></a>
+          <a href="https://github.com/Barosmun" target="_blank"><li class="social-icon github-icon" title="github"></li></a>
+          <a href="https://twitter.com/BarrettOsmund" target="_blank"><li class="social-icon twitter-icon" title="twitter"></li></a>
+          <a href="https://compscidu.slack.com/team/UCWGE7QS1" target="_blank"><li class="social-icon slack-icon" title="slack"></li></a>
+        </ul>
+      </div>
+    </div>
+    
+    <nav id="nav-bar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../work.html">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-active" href="../pages.html">Pages</a>
+          </li>
+          <li class="nav-item hidden">
+            <a class="nav-link" href="../contact.html">Contact</a>
+          </li>
+        </ul>
+    </nav>
+
+    <div id="content">
+
+      <section>
+        <h3 id="tictactitle"> Play some Tic-Tac-Toe? </h3>
+        <div id="tictactoe">
+          <div></div>
+          <div id="tictactable">
+            <div><button class="ttt" id="TL" onclick="marked(this.id, 'Top Left');">&nbsp;</button></div>
+            <div><button class="ttt" id="TM" onclick="marked(this.id, 'Top Middle');">&nbsp;</button></div>
+            <div><button class="ttt" id="TR" onclick="marked(this.id, 'Top Right');">&nbsp;</button></div>
+            <div><button class="ttt" id="CL" onclick="marked(this.id, 'Center Left');">&nbsp;</button></div>
+            <div><button class="ttt" id="CM" onclick="marked(this.id, 'Center Middle');">&nbsp;</button></div>
+            <div><button class="ttt" id="CR" onclick="marked(this.id, 'Center Right');">&nbsp;</button></div>
+            <div><button class="ttt" id="BL" onclick="marked(this.id, 'Bottom Left');">&nbsp;</button></div>
+            <div><button class="ttt" id="BM" onclick="marked(this.id, 'Bottom Middle');">&nbsp;</button></div>
+            <div><button class="ttt" id="BR" onclick="marked(this.id, 'Bottom Right');">&nbsp;</button></div>
+          </div>
+          <!-- External jQuery file in tictactoe.js -->
+          <div id="scores">
+            <table id="scoreboard">
+              <tr>
+                <th colspan="2"> Scoreboard </th>
+              </tr>
+              <tr>
+                <td>Player<br><b id="playerScore">0</b></td>
+                <td>AI<br><b id="aiScore">0</b></td>
+              </tr>
+            </table>
+            <br><br>
+            <button onclick="resetGame();">Reset Board</button>
+            <br>
+            <button onclick="resetScore();">Clear Scores</button>
+          </div>
+          <div></div>
+        </div>
+      </section>
+      
+    </div>
+    
+    <footer>
+      <br>
+      <a href="#page-top"> Top of Page </a>
+      <br><br>
+    </footer>
+    
+  </body>
+
+</html>

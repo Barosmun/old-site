@@ -1,0 +1,32 @@
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_154" d="m480,280.74074l-67.77778,-32.59259l-9.62963,76.29629l77.03704,40l0.37037,-83.7037z" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#FFF" fill="#000"/>
+  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+  <g stroke="null" transform="matrix(1.0031158197458716,0,0,1.0031158197458716,-240.76677628420293,-319.7910981680034) " id="svg_147">
+   <title stroke="null" transform="translate(-23.925453186035156,22.928558349609375) translate(-2132.999755859375,-2177.999755859375) translate(2399.916259765625,0) translate(0,2446.509521484375) ">background</title>
+   <g stroke="null" id="svg_145" display="none"/>
+  </g>
+  <path stroke="#FFF" fill="#000" d="m377.99821,216.83892l98.01056,-42.00951l103.99447,48.01087l-93.99802,47.99692l-108.00701,-53.99827" id="svg_141"/>
+  <path stroke="#FFF" fill="#000" d="m494.00238,280.83713l0,84.00157l96.00429,-47.99342l0,-86.00784l-96.00429,49.9997" id="svg_139"/>
+  <path stroke="#FFF" fill="#000" d="m188.00287,202.83692l0,-78.00022l111.99512,54.00176l0,86.00784l-111.99512,-62.01288" id="svg_137"/>
+  <path stroke="#FFF" fill="#000" d="m197.98885,114.83676l98.01056,-41.99904l104.00494,47.99692l-94.005,48.00041l-108.0105,-53.99479" id="svg_135"/>
+  <path stroke="#FFF" fill="#000" d="m314,178.83846l0,84.00157l96.0008,-48.00041l0,-84.00157l-96.0008,47.99692" id="svg_133"/>
+  <path stroke="#FFF" fill="#000" d="m15.99068,298.84122l0,-78.01068l112.0021,54.00525l0,84.01902l-112.0021,-60.01359" id="svg_131"/>
+  <path stroke="#FFF" fill="#000" d="m23.99481,210.83408l99.99938,-41.99904l104.00494,48.01087l-94.00849,47.99692l-109.99583,-54.01223" id="svg_129"/>
+  <path id="svg_151" d="m140,275c0,0 63.92857,-33.92857 63.92857,-33.92857c0,0 9.28572,82.14286 9.28572,82.14286c0,0 -70.71429,35 -70.71429,35c0,0 -2.5,-83.21429 -2.5,-83.21429z" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#FFF" fill="#000"/>
+  <path stroke="#FFF" fill="#000" d="m197.98885,314.84251l0,-80.00648l112.01257,54.00525l0,86.00784l-112.01606,-60.00312" id="svg_125"/>
+  <path stroke="#FFF" fill="#000" d="m205.99648,226.83538l99.99938,-41.99904l104.00494,48.00041l-96.0008,46.00112l-108.00352,-52.00247" id="svg_123"/>
+  <path stroke="#FFF" fill="#000" d="m322.00414,288.84127l1.98882,83.99809l96.00778,-46.00112l-1.99929,-86.00086l-95.99731,48.00389" id="svg_121"/>
+  <path id="svg_152" d="m-207.00001,320.35714c0,0 63.92857,-33.92857 63.92857,-33.92857c0,0 9.28572,82.14286 9.28572,82.14286c0,0 -70.71429,35 -70.71429,35c0,0 -2.5,-83.21429 -2.5,-83.21429z" fill-opacity="null" stroke-opacity="null" stroke-width="null" stroke="#FFF" fill="#000"/>
+ </g>
+</svg>

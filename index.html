@@ -1,113 +1,419 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>Barrett Osmundson</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts/tictactoe.js"></script>
-    <script src="scripts/flagSelector.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style-center.css">
   </head>
 
-  <body>
-    <a id="top"></a>
-    <div id="container">
-      <div id="page_title"><h1>Barrett&nbsp;Osmundson</h1></div>
-      <div id="social">
-        <div id="icon_email"><a href="mailto:barrettosmundson@gmail.com" target="_blank"><img src="images/email.png"></a></div>
-        <div id="icon_linkedin"><a href="https://www.linkedin.com/in/barrett-osmundson-10985119b/" target="_blank"><img src="images/linkedin.png"></a></div>
-        <div id="icon_github"><a href="https://github.com/Barosmun" target="_blank"><img src="images/github.png"></a></div>
-        <div id="icon_twitter"><a href="https://twitter.com/BarrettOsmund" target="_blank"><img src="images/twitter.png"></a></div>
-        <div id="icon_slack"><a href="https://compscidu.slack.com/team/UCWGE7QS1" target="_blank"><img src="images/slack.png"></a></div>
+  <body id="page-top">
+    <!--/   Nav Bar   /-->
+    <div id="header">
+      <div id="header-left">
+        <h1>Barrett Osmundson</h1>
       </div>
-      <div id="main">
-        <!--WELCOME-->
-        <section id="welcome">
-          <h1> Welcome! </h1>
-          <p>
-            Hey there! Welcome to my home page, my name is Barrett Osmundson.
-            This site contains some information about myself, my experience, and my projects.
-            Please browse at your leisure, and feel free to reach out to me on one of my socials
-            linked above.
-          </p>
-        </section>
-
-        <hr>
-
-        <!--TICTACTOE-->
-        <section id="tictactoe">
-          <h3 id="tictactitle"> Play some Tic-Tac-Toe? </h3>
-          <table id="tictactable">
-            <tr>
-              <td><button class="ttt" id="TL" onclick="marked(this.id, 'Top Left');">&nbsp;</button></td>
-              <td><button class="ttt" id="TM" onclick="marked(this.id, 'Top Middle');">&nbsp;</button></td>
-              <td><button class="ttt" id="TR" onclick="marked(this.id, 'Top Right');">&nbsp;</button></td>
-            </tr>
-            <tr>
-              <td><button class="ttt" id="CL" onclick="marked(this.id, 'Center Left');">&nbsp;</button></td>
-              <td><button class="ttt" id="CM" onclick="marked(this.id, 'Center Middle');">&nbsp;</button></td>
-              <td><button class="ttt" id="CR" onclick="marked(this.id, 'Center Right');">&nbsp;</button></td>
-            </tr>
-            <tr>
-              <td><button class="ttt" id="BL" onclick="marked(this.id, 'Bottom Left');">&nbsp;</button></td>
-              <td><button class="ttt" id="BM" onclick="marked(this.id, 'Bottom Middle');">&nbsp;</button></td>
-              <td><button class="ttt" id="BR" onclick="marked(this.id, 'Bottom Right');">&nbsp;</button></td>
-            </tr>
-          </table>
-          <!-- External jQuery file in tictactoe.js -->
-          <table id="scoreboard">
-            <tr>
-              <th colspan="2"> Scoreboard </th>
-            </tr>
-            <tr>
-              <td>Player<br><b id="playerScore">0</b></td>
-              <td>AI<br><b id="aiScore">0</b></td>
-            </tr>
-          </table>
-          <button onclick="resetGame();">Reset Game</button>
-          <br>
-          <button onclick="resetScore();">Clear Scores</button>
-        </section>
-
-        <hr>
-
-        <section id="flag">
-          <h1> Random Flag: </h1>
-          <table style="width:100%; border:0px;">
-            <tr>
-              <td style="border:0px; width: 40%">
-                <br>
-                <h4 id="flagPrompt">Hover over to reveal:</h4>
-                <h2 id="flagName"></h2>
-                <br><br>
-                <img id="flagImage">
-                <p><small>From a lovely little JSON database</small></p>
-              </td>
-              <td style="border:0px; vertical-align: top;">
-                <br><br>
-                <button onclick="randomFlag();"> New Flag </button>
-              </td>
-            </tr>
-          </table>
-        </section>
-
+      
+      <div id="header-right">
+        <ul id="socials">
+          <a href="mailto:barrettosmundson@gmail.com" target="_blank"><li class="social-icon email-icon" title="email"></li></a>
+          <a href="https://www.linkedin.com/in/barrett-osmundson/" target="_blank"><li class="social-icon linkedin-icon" title="linkedin"></li></a>
+          <a href="https://github.com/Barosmun" target="_blank"><li class="social-icon github-icon" title="github"></li></a>
+          <a href="https://twitter.com/BarrettOsmund" target="_blank"><li class="social-icon twitter-icon" title="twitter"></li></a>
+          <a href="https://compscidu.slack.com/team/UCWGE7QS1" target="_blank"><li class="social-icon slack-icon" title="slack"></li></a>
+        </ul>
       </div>
-      <!---------------------------------------------------------------------->
-      <div id="navbar">
-        <nav>
-          <a>Home</a>
-          <a href="about.html">About</a>
-          <a href="resume.html">Resume</a>
-          <a href="games.html">Games</a>
-          <a href="projects.html">Projects</a>
-        </nav>
-      </div>
-      <!---------------------------------------------------------------------->
-      <div id="footer">
-        <p><small><a href="#top">Top of page</a></small></p>
-      </div>
+    </div>
+    
+    <nav id="nav-bar">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link nav-active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="work.html">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages.html">Pages</a>
+          </li>
+          <li class="nav-item hidden">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+    </nav>
+
+    <div id="image-container">
 
     </div>
+
+    <div id="content">
+
+      <section id="welcome">
+        <h1>Welcome!</h1>
+        <p>
+          Hey there! Welcome to my home page, my name is Barrett Osmundson.
+          I'm a Software Engineer and Game Developer soon to graduate from college.
+          This site contains some information about myself, my experience, and my projects.
+          Please feel free to reach out to me.
+        </p>
+      </section>
+      <br>
+      <section>
+        <h1> Skills </h1>
+        <div id="skills" class="scroll-list invert">
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/java.svg">
+            </div>
+            <div></div>
+            <div>
+              Java
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/python.svg">
+            </div>
+            <div></div>
+            <div>
+              Python
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/cplusplus.svg">
+            </div>
+            <div></div>
+            <div>
+              C++
+            </div>
+          </div>
+          
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/javascript.svg">
+            </div>
+            <div></div>
+            <div>
+              Javascript
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/html5.svg">
+            </div>
+            <div></div>
+            <div>
+              HTML5
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/css3.svg">
+            </div>
+            <div></div>
+            <div>
+              CSS3
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/jquery.svg">
+            </div>
+            <div></div>
+            <div>
+              jQuery
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/git.svg">
+            </div>
+            <div></div>
+            <div>
+              Git
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/gnubash.svg">
+            </div>
+            <div></div>
+            <div>
+              Bash
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/go.svg">
+            </div>
+            <div></div>
+            <div>
+              Go
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/vba2.svg">
+            </div>
+            <div></div>
+            <div>
+              VBA
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/csharp.svg">
+            </div>
+            <div></div>
+            <div>
+              C#
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/c.svg">
+            </div>
+            <div></div>
+            <div>
+              C
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/node-dot-js.svg">
+            </div>
+            <div></div>
+            <div>
+              Node JS
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/json.svg">
+            </div>
+            <div></div>
+            <div>
+              JSON
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/vba2.svg">
+            </div>
+            <div></div>
+            <div>
+              VBA
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/postgresql.svg">
+            </div>
+            <div></div>
+            <div>
+              PostgreSQL
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/mongodb.svg">
+            </div>
+            <div></div>
+            <div>
+              MongoDB
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/neo4j.svg">
+            </div>
+            <div></div>
+            <div>
+              Neo4j
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/atom.svg">
+            </div>
+            <div></div>
+            <div>
+              Atom
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/visualstudiocode.svg">
+            </div>
+            <div></div>
+            <div>
+              VS Code
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/windows.svg">
+            </div>
+            <div></div>
+            <div>
+              Windows
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/linux.svg">
+            </div>
+            <div></div>
+            <div>
+              Linux
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/ios.svg">
+            </div>
+            <div></div>
+            <div>
+              iOS
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/ubuntu.svg">
+            </div>
+            <div></div>
+            <div>
+              Ubuntu
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/vue-dot-js.svg">
+            </div>
+            <div></div>
+            <div>
+              Vue JS
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/electron.svg">
+            </div>
+            <div></div>
+            <div>
+              Electron
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/docker.svg">
+            </div>
+            <div></div>
+            <div>
+              Docker
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/googledrive.svg">
+            </div>
+            <div></div>
+            <div>
+              Google Drive
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/microsoftword.svg">
+            </div>
+            <div></div>
+            <div>
+              MS Word
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/microsoftpowerpoint.svg">
+            </div>
+            <div></div>
+            <div>
+              MS PowerPoint
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/microsoftexcel.svg">
+            </div>
+            <div></div>
+            <div>
+              MS Excel
+            </div>
+          </div>
+
+          <div class="img-with-desc-vert">
+            <div>
+              <img src="images/skills/wink.svg">
+            </div>
+            <div></div>
+            <div>
+              Web Design
+            </div>
+          </div>
+
+        </div>
+        <br>
+      </section>
+      <!-- <p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </p> -->
+    </div>
+    
+    <footer>
+      <br>
+      <a href="#page-top"> Top of Page </a>
+      <br><br>
+    </footer>
+    
   </body>
+
 </html>

@@ -1,0 +1,123 @@
+h3{
+	text-align: center;
+	font-size: 175%;
+}
+
+#tictactoe {
+	text-align: center;
+	width: 100%;
+	display: grid;
+	grid-template-columns: [margin-l] 20% [board] 40% [score] 20% [margin-r] 20%;
+}
+
+#tictactable {
+	font-size: 400%;
+	line-height: 200%;
+	width: 90%;
+	display: grid;
+	grid-gap: 0% 0%;
+	grid-template-rows: [T] 30% [C] 30% [B] 30%;
+	grid-template-columns: [L] 30% [M] 30% [R] 30%;;
+	grid-template-areas:
+		"TL TM TR"
+		"CL CM CR"
+		"BL BM BR";
+	float: left;
+}
+
+
+#tictactable button{
+	position: relative;
+	width: 95%;
+	padding-top: 80%;
+	margin-bottom: 16%;
+	background-color: var(--buttonBack2);
+	border: 4px solid var(--contentBack);
+}
+
+#tictactable button:hover{
+	background-color: var(--buttonBack);
+}
+
+.clear-both {
+	clear: both;
+}
+
+#scoreboard {
+	border-collapse: collapse;
+	border: none;
+	text-align: center;
+}
+
+#scoreboard th{
+	font-size: 200%;
+}
+
+#scoreboard td{
+	font-size: 120%;
+	width: 50%;
+	border: solid 2px var(--defaultText);
+}
+
+#scores button{
+	font-size: 120%;
+	border: none;
+	background-color: var(--buttonBack);
+	color: var(--buttonText);
+	padding: 8%;
+	margin: 8%;
+}
+
+#scores button:hover{
+	background-color: var(--navBack);
+	border: none;
+}
+
+@media screen and (max-width: 9999px){
+	#tictactoe {
+		grid-template-columns: [margin-l] 20% [board] 40% [score] 20% [margin-r] 20%;
+	}
+
+	#tictactable button{
+		width: 95%;
+		border: 4px solid var(--contentBack);
+	}
+
+	#scoreboard th{
+		font-size: 200%;
+	}
+	
+	#scoreboard td{
+		font-size: 120%;
+	}
+
+	#scores button{
+		font-size: 120%;
+		padding: 8%;
+		margin: 8%;
+	}
+}
+@media screen and (max-width: 680px){
+	#tictactoe {
+		grid-template-columns: [margin-l] 0% [board] 60% [score] 40% [margin-r] 0%;
+	}	
+
+	#tictactable button{
+		width: 100%;
+		border: 2px solid var(--contentBack);
+	}
+
+	#scoreboard th{
+		font-size: 150%;
+	}
+	
+	#scoreboard td{
+		font-size: 80%;
+	}
+
+	#scores button{
+		font-size: 80%;
+		padding: 10% 20%;
+		margin: 8%;
+	}
+}
