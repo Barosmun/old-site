@@ -154,6 +154,10 @@ a:hover {
 	background-image: url(../images/slack.svg);
 }
 
+.hackerrank-icon {
+	background-image: url(../images/hackerrank.svg);
+}
+
 #nav-bar{
 	position: sticky;
 	top: 0px;
