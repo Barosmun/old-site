@@ -282,6 +282,7 @@ a:hover {
 	width: 100%;
 }
 
+
 .img-with-desc-vert {
 	display: grid;
 	grid-template-rows: [img] 50% [margin-m] 35% [desc] 15%;
@@ -289,6 +290,7 @@ a:hover {
 	margin-bottom: 20px;
 	width: 100%;
 	min-width: 12.5%;
+	backface-visibility: hidden;
 	/* background-color: black; */
 }
 
