@@ -26,19 +26,20 @@
 /*================================================================*/
 
 ::-webkit-scrollbar {
+	-webkit-appearance: none;
 	width: 1%;
   }
   
 ::-webkit-scrollbar-track {
-background: var(--contentBack); 
+	background: var(--contentBack); 
 }
 
 ::-webkit-scrollbar-thumb {
-background: var(--buttonBack); 
+	background: var(--buttonBack); 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-background: var(--navBack); 
+	background: var(--navBack); 
 }
 
 /*================================================================*/
