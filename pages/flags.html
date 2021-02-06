@@ -5,14 +5,15 @@
     <title>Barrett Osmundson</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, intial-scale=1">
+    <link rel="stylesheet" href="../css/style-center.css">
+    <link rel="stylesheet" href="../css/flags.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../scripts/flags.js"></script>
     <script src="../scripts/button-expand.js"></script>
-    <link rel="stylesheet" href="../css/style-center.css">
-    <link rel="stylesheet" href="../css/flags.css">
+    <script src="../scripts/preload.js"></script>
   </head>
 
-  <body id="page-top" ontouchstart=""> <!--ontouchstart="" fixes :focus on ios safari for some reason-->
+  <body id="page-top" ontouchstart="" class="preload"> <!--ontouchstart="" fixes :focus on ios safari for some reason-->
     <!--/   Nav Bar   /-->
     <div id="header">
       <div id="header-left">
@@ -43,10 +44,7 @@
             <a class="nav-link" href="../work.html">Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-active" href="../pages.html">Pages</a>
-          </li>
-          <li class="nav-item hidden">
-            <a class="nav-link" href="../contact.html">Contact</a>
+            <a class="nav-link nav-subpage-active" href="../pages.html">Pages</a>
           </li>
         </ul>
     </nav>

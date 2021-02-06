@@ -27,6 +27,7 @@
 
 ::-webkit-scrollbar {
 	-webkit-appearance: none;
+	-webkit-overflow-scrolling: touch;
 }
 
   
@@ -45,6 +46,13 @@
 /*================================================================*/
 /*				UNIVERSALS										  */
 /*================================================================*/
+
+.preload * { /*This prevents animations/transitions from firing on page load!*/
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+}
 
 .hidden {
 	visibility: hidden;
@@ -230,6 +238,11 @@ a:hover {
 
 .nav-active {
 	background-color:var(--navActive);
+}
+
+.nav-subpage-active {
+	/* background-color: var(--navHover); */
+	box-shadow: inset 0px -4px 0px 0px var(--navActive);
 }
 
 .nav-active:hover {
