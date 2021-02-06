@@ -27,7 +27,7 @@
 
 ::-webkit-scrollbar {
 	-webkit-appearance: none;
-	-webkit-overflow-scrolling: touch;
+	min-width: 7px;
 }
 
   
