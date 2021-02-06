@@ -20,7 +20,10 @@ function marked(square, classes){
 	  updateScore(1,0);
 	}
 	else if($(".o.Top").length === 3 || $(".o.Middle").length === 3 || $(".o.Bottom").length === 3 ||
-	  $(".o.Left").length === 3 || $(".o.Center").length === 3 || $(".o.Right").length === 3){
+	  $(".o.Left").length === 3 || $(".o.Center").length === 3 || $(".o.Right").length === 3 ||(
+		($(".o.Middle.Center").length === 1 && ( ($(".o.Top.Left").length === 1 && $(".o.Bottom.Right").length === 1)
+		|| ($(".o.Top.Right").length === 1 && $(".o.Bottom.Left").length === 1)) )
+	  )) {
 	  $("#tictactitle").replaceWith(`<h3 id="tictactitle"> AI wins! </h3>`);
 	  $(".ttt").replaceWith("<b>&nbsp;&nbsp;&nbsp;");
 	  updateScore(0,1);
