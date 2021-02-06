@@ -54,6 +54,17 @@
 	-o-transition: none !important;
 }
 
+#preload-images { /*Gotta preload the socials*/
+	width: 0px;
+	height: 0px;
+	display: inline;
+	background-image: url(../images/email_active.svg);
+	background-image: url(../images/linkedin_active.svg);
+	background-image: url(../images/github_active.svg);
+	background-image: url(../images/hackerrank_active.svg);
+	background-image: url();
+}
+
 .hidden {
 	visibility: hidden;
 	display: none;
