@@ -48,6 +48,7 @@
 /*================================================================*/
 
 .preload * { /*This prevents animations/transitions from firing on page load!*/
+	transition: none !important;
 	-webkit-transition: none !important;
 	-moz-transition: none !important;
 	-ms-transition: none !important;
@@ -55,6 +56,7 @@
 }
 
 #preload-images { /*Gotta preload the socials*/
+	position: absolute;
 	width: 0px;
 	height: 0px;
 	display: inline;
@@ -62,7 +64,6 @@
 	background-image: url(../images/linkedin_active.svg);
 	background-image: url(../images/github_active.svg);
 	background-image: url(../images/hackerrank_active.svg);
-	background-image: url();
 }
 
 .hidden {
@@ -150,22 +151,28 @@ a:hover {
 	display: block;
 	/* background-color: white;   */
 	background-size: 100% 100%;
-	background-position: center;
+	background-position: center center;
 	background-repeat: no-repeat;
 	box-sizing: border-box;
 	display: inline-block;
 	padding: 48px 48px;
-	filter: invert(100%);
-	transition: background-image .15s ease-in, filter .15s ease-in, transform .18s ease;
+	/* filter: invert(100%); */
+	transition: background-image .15s ease-in 0.01s, transform .2s ease 0.01s;
+	transform-origin: center center;
 }
 
 .social-icon:hover, .social-icon:focus {
-	filter: none;
+	/* filter: none; */
 	transform: scale(1.15);
 }
 
 .email-icon {
 	background-image: url(../images/email.svg);
+}
+
+.email-icon:after {
+	content: url(../images/email_active.svg);
+	display: none;
 }
 
 .email-icon:hover, .email-icon:focus {
@@ -178,6 +185,11 @@ a:hover {
 	background-image: url(../images/linkedin.svg);
 }
 
+.linkedin-icon:after {
+	content: url(../images/linkedin_active.svg);
+	display: none;
+}
+
 .linkedin-icon:hover, .linkedin-icon:focus {
 	/* filter: invert(24%) sepia(77%) saturate(4994%) hue-rotate(186deg) brightness(98%) contrast(101%); */
 	background-image: url(../images/linkedin_active.svg);
@@ -187,6 +199,11 @@ a:hover {
 	background-image: url(../images/github.svg);
 }
 
+.github-icon:after {
+	content: url(../images/github_active.svg);
+	display: none;
+}
+
 .github-icon:hover, .github-icon:focus {
 	/* filter: invert(1%) sepia(4%) saturate(3168%) hue-rotate(315deg) brightness(96%) contrast(83%); */
 	background-image: url(../images/github_active.svg);
@@ -194,6 +211,11 @@ a:hover {
 
 .hackerrank-icon {
 	background-image: url(../images/hackerrank.svg);
+}
+
+.hackerrank-icon:after {
+	content: url(../images/hackerrank_active.svg);
+	display: none;
 }
 
 .hackerrank-icon:hover, .hackerrank-icon:focus {
