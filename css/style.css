@@ -29,7 +29,7 @@
 
 ::-webkit-scrollbar {
 	-webkit-appearance: none;
-	min-width: 7px;
+	/* min-width: 7px; */
 }
 
   
