@@ -1,0 +1,24 @@
+
+.image-container {
+	height: 10rem;
+	background-image: url(../images/coding.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top right;
+}
+
+#header{
+	background-color: transparent;
+}
+
+
+
+#content{
+	background-color: transparent;
+}
+
+:root{
+	--navBack: #303030BB;
+	--sectionBack: #404040BB;
+}
