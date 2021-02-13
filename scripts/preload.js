@@ -1,3 +1,7 @@
 $(document).ready(function() {
-	$("body").removeClass("preload");
+	setTimeout(
+		function() 
+		{
+			$("body").removeClass("preload");
+		}, 100);
   });
