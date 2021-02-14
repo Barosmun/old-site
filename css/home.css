@@ -1,24 +1,82 @@
 
 .image-container {
-	height: 10rem;
-	background-image: url(../images/coding.png);
+	height: 100%;
+	background-image: url(../images/home_image_small.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: top right;
+	display: flexbox;
+	grid-template-columns: [all] 100%;
+	grid-template-rows: [title] 38% [socials] 31% [navbar] 31%;
+	grid-template-areas: "title" "socials" "navbar";
 }
 
-#header{
+#header-top {
 	background-color: transparent;
+	grid-area: "title";
 }
 
-
-
-#content{
+#header-bottom{
 	background-color: transparent;
+	grid-area: "socials";
+}
+
+#nav-container {
+	grid-area: "navbar";
 }
 
 :root{
 	--navBack: #303030BB;
 	--sectionBack: #404040BB;
+}
+
+/*================================================================*/
+/*				VIEWPORTS										  */
+/*================================================================*/
+
+/* On screens that are 5120px wide or less*/
+@media screen and (max-width: 9999px){
+
+	.image-container {
+		background-size: 110%;
+	}
+}
+/* On screens that are 3440px wide or less*/
+@media screen and (max-width: 3440px){
+
+}
+/* On screens that are 2560px wide or less*/
+@media screen and (max-width: 2560px){
+
+}
+/* On screens that are 1920px wide or less*/
+@media screen and (max-width: 1920px){
+	
+}
+/* On screens that are 1536 wide or less*/
+@media screen and (max-width: 1536px){
+	
+}
+/* On screens that are 1024px wide or less*/
+@media screen and (max-width: 1300px){
+}
+/* On screens that are 720px wide or less*/
+@media screen and (max-width: 980px){
+	.image-container {
+		background-size: 150%;
+	}
+}
+/* On screens that are 360px wide or less*/
+@media screen and (max-width: 680px){
+	.image-container{
+		background-size: 175%;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.image-container{
+		background-size: 120vmax;
+		background-position-x: center;
+	}
 }
