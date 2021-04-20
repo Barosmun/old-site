@@ -317,7 +317,7 @@ a:hover {
 	display: grid;
 	grid-template-columns: [img] 15% [margin-m] 5% [desc] 50%;
 	overflow-wrap: unset;
-	line-height: 0.8;
+	line-height: 1.2;
 }
 
 .img-with-desc small{
