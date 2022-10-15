@@ -68,10 +68,15 @@
 	background-image: url(../images/hackerrank_active.svg);
 }
 
-.hidden {
-	visibility: hidden;
-	display: none;
+.expandable {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }
+
+/* .start-open{
+	max-height: 100% !important;
+} */
 
 body{
 	display: flex;
@@ -289,11 +294,11 @@ a:hover {
 	border: none;
 	background-color: var(--buttonBack);
 	color: var(--buttonText);
-	padding: 8px 8px 16px 8px;
+	padding: 12px 4px 16px 8px;
 	font-size: 14px;
-	font-weight: 900;
-	letter-spacing: 3px;
-	line-height: 4px;
+	/* font-weight: 900; */
+	/* letter-spacing: 3px; */
+	/* line-height: 4px; */
 	text-align: left;
 }
 

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, intial-scale=1">
 
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/flags.css">
+    <link rel="stylesheet" href="../css/tictactoe.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="preload" href="../images/email_active.svg" as="image">
@@ -17,13 +17,12 @@
     <link rel="preload" href="../images/hackerrank_active.svg" as="image">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../scripts/flags.js"></script>
-    <script src="../scripts/button-expand.js"></script>
+    <script src="../scripts/tictactoe.js"></script>
     <script src="../scripts/preload.js"></script>
   </head>
 
-  <body id="page-top" ontouchstart="" class="preload"> <!--ontouchstart="" fixes :focus on ios safari for some reason-->
-    
+  <body id="page-top" class="preload">
+  
     <div id="header">
       <div id="header-top">
         <h1>Barrett Osmundson</h1>
@@ -38,7 +37,7 @@
         </ul>
       </div>
     </div>
-    
+
     <!--/   Nav Bar   /-->
     <nav id="nav-bar">
         <ul class="nav-menu">
@@ -52,7 +51,7 @@
             <a class="nav-link" href="../work.html">Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-subpage-active" href="../pages.html">Pages</a>
+            <a class="nav-link nav-subpage-active" href="../fun.html">Fun</a>
           </li>
         </ul>
     </nav>
@@ -60,46 +59,37 @@
     <div id="content">
 
       <section>
-        <h3 id="flag-title"> Random Flag </h3>
-        <div id="flags">
+        <h3 id="tictactitle"> Play some Tic-Tac-Toe? </h3>
+        <div id="tictactoe">
           <div></div>
-          <div id="flag-display">
-            <img id="flag-image">
+          <div id="tictactable">
+            <div><button class="ttt" id="TL" onclick="marked(this.id, 'Top Left');">&nbsp;</button></div>
+            <div><button class="ttt" id="TM" onclick="marked(this.id, 'Top Middle');">&nbsp;</button></div>
+            <div><button class="ttt" id="TR" onclick="marked(this.id, 'Top Right');">&nbsp;</button></div>
+            <div><button class="ttt" id="CL" onclick="marked(this.id, 'Center Left');">&nbsp;</button></div>
+            <div><button class="ttt" id="CM" onclick="marked(this.id, 'Center Middle');">&nbsp;</button></div>
+            <div><button class="ttt" id="CR" onclick="marked(this.id, 'Center Right');">&nbsp;</button></div>
+            <div><button class="ttt" id="BL" onclick="marked(this.id, 'Bottom Left');">&nbsp;</button></div>
+            <div><button class="ttt" id="BM" onclick="marked(this.id, 'Bottom Middle');">&nbsp;</button></div>
+            <div><button class="ttt" id="BR" onclick="marked(this.id, 'Bottom Right');">&nbsp;</button></div>
+          </div>
+          <!-- External jQuery file in tictactoe.js -->
+          <div id="scores">
+            <table id="scoreboard">
+              <tr>
+                <th colspan="2"> Scoreboard </th>
+              </tr>
+              <tr>
+                <td>Player<br><b id="playerScore">0</b></td>
+                <td>AI<br><b id="aiScore">0</b></td>
+              </tr>
+            </table>
+            <br><br>
+            <button onclick="resetGame();">Reset Board</button>
+            <br>
+            <button onclick="resetScore();">Clear Scores</button>
           </div>
           <div></div>
-          <div id="flag-context">
-            <h4 id="flag-prompt">Hover over to reveal:</h4>
-            <h2 id="flag-name"></h2>
-            <button id="new-flag-button"> New Flag </button>
-          </div>
-          <div></div>
-        </div>
-      </section>
-        <section>
-        <div>
-          <br>
-          <p class="expandable hidden">
-            The flags in this database are not reflective of a global consensus on national recognition.
-            Flags of states that you and/or your government do not recognize may be included.
-            <br><br><small>
-            There are currently 197 countries included:
-            <ul class="expandable hidden">
-              <li>
-                The 193 United Nations member states
-              </li>
-              <li>
-                The 2 UN Observer states: Palestine and the Holy See (Vatican City)
-              </li>
-              <li>
-                Kosovo
-              </li>
-              <li>
-                Taiwan (Republic of China)
-              </li>
-            </ul>
-            </small>
-          </p>
-          <button class="button-expand">...</button>
         </div>
       </section>
       

@@ -61,3 +61,14 @@ function setFlag(num){
     });
   }
 }
+
+function testFlags(num){
+  $.getJSON("../scripts/country_flags.json", function(data) {
+    for(let i = 0; i < 222; i++){
+      setTimeout(function () {
+        setFlag(i);
+        // console.log(i);
+      }, i* 250);
+    }
+  });
+}
