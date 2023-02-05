@@ -339,6 +339,11 @@ a:hover {
 	margin-bottom: 7px;
 }
 
+.project-container {
+	display: flex;
+	align-items: space-between;
+}
+
 .scroll-list {
 	display: flex;
 	overflow-x: auto;
