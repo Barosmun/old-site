@@ -65,7 +65,7 @@
 	background-image: url(../images/email_active.svg);
 	background-image: url(../images/linkedin_active.svg);
 	background-image: url(../images/github_active.svg);
-	background-image: url(../images/hackerrank_active.svg);
+	background-image: url(../images/itchdotio_active.svg);
 }
 
 .expandable {
@@ -193,6 +193,15 @@ a:hover {
 .github-icon:hover, .github-icon:focus {
 	/* filter: invert(1%) sepia(4%) saturate(3168%) hue-rotate(315deg) brightness(96%) contrast(83%); */
 	background-image: url(../images/github_active.svg);
+}
+
+.itchdotio-icon {
+	background-image: url(../images/itchdotio.svg);
+}
+
+.itchdotio-icon:hover, .github-icon:focus {
+	/* filter: invert(1%) sepia(4%) saturate(3168%) hue-rotate(315deg) brightness(96%) contrast(83%); */
+	background-image: url(../images/itchdotio_active.svg);
 }
 
 .hackerrank-icon {
